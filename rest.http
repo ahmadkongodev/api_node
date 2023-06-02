@@ -1,0 +1,122 @@
+GET http://192.168.134.70:3000/products/tables
+
+###tables
+GET http://localhost:3000/products/tables
+
+
+###chaises
+GET http://localhost:3000/products/chaises
+
+###podium
+GET http://localhost:3000/products/podiums
+
+###baches
+GET http://localhost:3000/products/baches
+###create POST
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "image":"image",
+    "nom":"bache",
+    "description":"bache simple",
+    "quantite":5,
+    "prix":300
+}
+###show post
+
+GET http://localhost:3000/products/6454de6118d449c355712bef
+###update post
+
+PATCH http://localhost:3000/products/6454de6118d449c355712bef
+Content-Type: application/json
+
+{
+        "quantite":15,
+
+}
+
+###delete post
+
+DELETE http://localhost:3000/products/64560f14fc7cfb337158e119
+
+
+
+###LOCATIONS
+GET http://localhost:3000/locations
+
+###create POST
+POST http://localhost:3000/locations
+Content-Type: application/json
+
+{
+    "date_fin":"10/12/2023",
+    "id_client":"6458d9db18cb146f642242ce",
+    "id_produit":"645a24fd50ef19362a749e26",
+    "quantite_louer":15
+    
+}
+###show post
+
+GET http://localhost:3000/locations/6454de6118d449c355712bef
+###update post
+
+PATCH http://localhost:3000/locations/6458d88518cb146f642242cb
+Content-Type: application/json
+
+{
+       "id_client": "6458d88518cb146f642242cb"
+
+}
+
+###delete post
+
+DELETE http://localhost:3000/locations/produit/645cc00adf89c0a14aa2234b
+
+###clients
+
+GET http://localhost:3000/clients
+
+###create POST
+POST http://localhost:3000/clients/register
+Content-Type: application/json
+
+{
+    "nom":"client1",
+    "prenom":"client1",
+    "username":"client4",
+    "password":"12345678",
+    "numero":"72990620"
+    
+    
+}
+###
+
+POST http://localhost:3000/clients/login
+Content-Type: application/json
+
+{
+     "username":"ahmadev",
+    "password":"123456"
+    
+    
+}
+###show post
+
+GET http://localhost:3000/clients/6454de6118d449c355712bef
+###update post
+
+PATCH http://localhost:3000/clients/6458d9db18cb146f642242ce
+Content-Type: application/json
+
+{
+    "address":"Paologo"
+
+}
+
+###delete post
+
+DELETE http://localhost:3000/clients/64560f14fc7cfb337158e119
+
+###
+GET http://localhost:3000/ss
